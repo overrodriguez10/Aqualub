@@ -1,0 +1,75 @@
+/* App specific styles */
+.app-container {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -4rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), var(--primary));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.logo-text {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  background: linear-gradient(to right, #fff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-badge.on { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+.status-badge.off { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.report-btn {
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 20px -5px var(--accent-glow);
+}
+
+.report-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px var(--accent-glow);
+}
